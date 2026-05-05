@@ -12,7 +12,7 @@
 <script>
 function onScanSuccess(decodedText) {
     // REDIRECCIÓN A POWER APPS
-    window.location.href = "https://apps.powerapps.com/play/XXXXXXXX?codigo=" + encodeURIComponent(decodedText);
+    window.location.href = "https://apps.powerapps.com/play/e/default-aaace049-6505-453e-94a3-c70dcacf2984/a/1daf0cf6-63cb-403a-8b98-0daa90eaf8a1?tenantId=aaace049-6505-453e-94a3-c70dcacf2984&hint=3e84fa17-6b59-4197-818f-e7e8297868a2&sourcetime=1778012711723&codigo=" + encodeURIComponent(decodedText);
 }
 
 new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 }).render(onScanSuccess);
